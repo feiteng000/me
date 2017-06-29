@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <!--移动适配-->
+    <script>
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = winW/desW*100+"px";
+    </script>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide slide1" id="page1"><!--首页-->
+            <header id="header">
+                <a href="https://github.com/feiteng000"><img src="github_touxiang.jpeg" alt="GitHub"></a>
+                <div id="nav">首页<p></p></div>
+            </header>
+            <p class="geyan">人生的意义在于不断地追求</p>
+            <hr><div id="yuan_1"></div><div id="yuan_2"></div>
+            <div id="yuan_3"></div>
+            <ul>
+                <li>王艳青</li>
+                <li>求职web前端</li>
+            </ul>
+            <img src="me_0.gif" alt="me" id="me">
+        </div>
+        <div class="swiper-slide slide2"></div><!--基本信息-->
+        <div class="swiper-slide slide3"></div><!--自我介绍-->
+        <div class="swiper-slide slide4"></div><!--个人技能-->
+        <div class="swiper-slide slide5"></div><!--我的作品-->
+        <div class="swiper-slide slide6"></div><!--联系方式-->
+    </div>
+</div>
+<script src="swiper.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
