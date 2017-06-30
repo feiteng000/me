@@ -22,10 +22,29 @@ header{
     background-color: rgba(255,255,255,.5);
     position: absolute;
 }
-nav{
-    font-size: .5rem;
+header>nav{
+    display: none;
+    opacity: 0;
 }
-header a{
+#banner{
+    height: 1rem;
+    line-height: 1rem;
+    width: 100%;
+    font-size: .25rem;
+    position: relative;
+    color: deeppink;
+    list-style-type: none;
+}
+#banner>li{
+    float: left;
+    height: 1rem;
+    margin-left: .13rem;
+}
+#banner>li>a{
+    text-decoration: none;
+    color: white;
+}
+header>a{
     display: block;
     position: absolute;
     top: .1rem;
@@ -39,7 +58,7 @@ header img{
     height: .8rem;
     border-radius: 50%;
 }
-#nav{
+#daohang{
     font-family: "Microsoft YaHei UI";
     color: white;
     margin: 0 auto;
@@ -48,7 +67,7 @@ header img{
     width: 1.1rem;
     line-height: 1rem;
 }
-#nav p{
+#daohang p{
     display: inline-block;
     margin: .2rem 0 0 .1rem;
     width: 0;
@@ -100,20 +119,21 @@ header img{
     border-radius: 50%;
     border: .03rem solid rgba(0, 0, 0, 0.13);
 }
-.slide1 ul{
+.slide1>ul{
     position: relative;
     top: 1.5rem;
     list-style-type: none;
     float: right;
     color: white;
 }
-.slide1 ul li{
+.slide1>ul>li{
     text-align: right;
     margin-right: .5rem;
     height: 1rem;
     font-size: .5rem;
 }
 #me{
+    width:45%;
     position: absolute;
     bottom:1rem;
 }
