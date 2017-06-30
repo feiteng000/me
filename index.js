@@ -15,3 +15,20 @@ var mySwiper = new Swiper(".swiper-container",{
         slides[curIndex].id = "page"+(curIndex+1);
     }
 });
+
+var oDh = document.getElementById("daohang");
+var oNav = document.getElementById("nav");
+console.log(oDh,oNav);
+console.log(oNav.style);
+var navStyle = oNav.style;
+oDh.onclick = function () {
+    if (navStyle.display == "none"){
+        navStyle.display = "block";
+        navStyle.opacity = "1";
+        console.log(navStyle.display);
+    }else {
+        navStyle.display = "none";
+        navStyle.opacity = "0";
+        console.log(navStyle.display);
+    }
+};
